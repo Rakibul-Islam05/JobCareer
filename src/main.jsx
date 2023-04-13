@@ -9,7 +9,7 @@ import {
 //import Statistics from './Component/Statistics/Statistics';
 import Home from './Component/Home/Home';
 import Banner from './Component/Banner/Banner';
-//import Blogs from './Component/Blogs/Blogs';
+import Blogs from './Component/Blogs/Blogs';
 
 
 const router = createBrowserRouter([
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/blogs',
-        element:<div>this is blog page</div>
+        element:<Blogs></Blogs>
       }
     ]
   },
