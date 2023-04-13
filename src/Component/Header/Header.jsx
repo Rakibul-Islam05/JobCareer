@@ -1,5 +1,5 @@
 import React from 'react';
-//import Banner from '../Banner/Banner';
+import Banner from '../Banner/Banner';
 
 const Header = () => {
     return (
@@ -18,6 +18,7 @@ const Header = () => {
             <button className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 p-3 rounded font-semibold'>Start Applying</button>
             </div>
         </div>
+        
         </div>
     );
 };
