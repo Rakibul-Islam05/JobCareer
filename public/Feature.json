@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "jobPosition": "Software Engineer",
+      "companyName": "Google",
+      "jobTime": ["Full-time", "Remote"],
+      "location": "Mountain View, CA",
+      "salary": "$150,000 - $200,000"
+    },
+    {
+      "id": 2,
+      "jobPosition": "Data Analyst",
+      "companyName": "Airbnb",
+      "jobTime": ["Part-time", "On-site"],
+      "location": "Menlo Park, CA",
+      "salary": "$80,000 - $120,000"
+    },
+    {
+      "id": 3,
+      "jobPosition": "Marketing Manager",
+      "companyName": "Netflix",
+      "jobTime": ["Full-time", "On-site"],
+      "location": "Cupertino, CA",
+      "salary": "$120,000 - $150,000"
+    },
+    {
+      "id": 4,
+      "jobPosition": "UI/UX Designer",
+      "companyName": "Tesla",
+      "jobTime": ["On-site", "Remote"],
+      "location": "Seattle, WA",
+      "salary": "$100,000 - $130,000"
+    },
+    {
+      "id": 5,
+      "jobPosition": "Product Manager",
+      "companyName": "Facebook",
+      "jobTime": ["On-site", "Remote"],
+      "location": "Redmond, WA",
+      "salary": "$130,000 - $160,000"
+    },
+    {
+      "id": 6,
+      "jobPosition": "Sales Executive",
+      "companyName": "Apple",
+      "jobTime": ["Part-time", "Remote"],
+      "location": "San Francisco, CA",
+      "salary": "$90,000 - $110,000"
+    }
+  ]

@@ -1,0 +1,20 @@
+[  {
+    "id": 1,
+    "jobCategory": "Account & Finance",
+    "availableJob": "3466"  
+    }, 
+    {
+    "id": 2,
+    "jobCategory": "Creative Design",
+    "availableJob": "5655"
+    },  
+    {
+    "id": 3,
+    "jobCategory": "Marketing & Sales",
+    "availableJob": "9888"  
+    },  
+    {"id": 4,
+    "jobCategory": "Engineering Job", 
+    "availableJob": "8777"  
+    }
+]
