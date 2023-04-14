@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import data from '../../../public/Feature.json';
+import { Link } from 'react-router-dom';
 
 const Feature = () => {
     const [showAll, setShowAll] = useState(false);
@@ -23,8 +24,12 @@ const Feature = () => {
                         <h2 className='font-semibold text-lg'>{job.jobPosition}</h2>
                         <p>{job.companyName}</p>
                         <p className='mt-4 text-blue-500'><span className='border p-2'>{job.jobTime[0]}</span><span className='border p-2 ms-4'>{job.jobTime[1]}</span></p>
-                        <p className='flex mt-3'> <img src={`/src/assets/Icons/Location Icon.png`} alt="" />{job.location} <img src={`/src/assets/Icons/Frame.png`} alt="" className='' /> Salary:{job.salary}</p>
-                        <button className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-3 '>View Details</button>
+                        <p className='flex mt-3 mb-4'> <img src={`/src/assets/Icons/Location Icon.png`} alt="" />{job.location} <img src={`/src/assets/Icons/Frame.png`} alt="" className='' /> Salary:{job.salary}</p>
+
+                        <Link to={`/job/${job.id}`} className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center'>
+                            View Details
+                        </Link>
+
                     </div>
                 ))}
             </div>

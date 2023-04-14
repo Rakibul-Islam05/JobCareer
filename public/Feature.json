@@ -5,7 +5,9 @@
       "companyName": "Google",
       "jobTime": ["Full-time", "Remote"],
       "location": "Mountain View, CA",
-      "salary": "$150,000 - $200,000"
+      "salary": "$150,000 - $200,000",
+      "phone":"01792-334423",
+      "email":"vugijugi01@gmail.com"
     },
     {
       "id": 2,
@@ -13,7 +15,9 @@
       "companyName": "Airbnb",
       "jobTime": ["Part-time", "On-site"],
       "location": "Menlo Park, CA",
-      "salary": "$80,000 - $120,000"
+      "salary": "$80,000 - $120,000",
+      "phone":"01392-334423",
+      "email":"vugijugi02@gmail.com"
     },
     {
       "id": 3,
@@ -21,7 +25,9 @@
       "companyName": "Netflix",
       "jobTime": ["Full-time", "On-site"],
       "location": "Cupertino, CA",
-      "salary": "$120,000 - $150,000"
+      "salary": "$120,000 - $150,000",
+      "phone":"01492-334423",
+      "email":"vugijugi03@gmail.com"
     },
     {
       "id": 4,
@@ -29,7 +35,9 @@
       "companyName": "Tesla",
       "jobTime": ["On-site", "Remote"],
       "location": "Seattle, WA",
-      "salary": "$100,000 - $130,000"
+      "salary": "$100,000 - $130,000",
+      "phone":"01692-334423",
+      "email":"vugijugi04@gmail.com"
     },
     {
       "id": 5,
@@ -37,7 +45,9 @@
       "companyName": "Facebook",
       "jobTime": ["On-site", "Remote"],
       "location": "Redmond, WA",
-      "salary": "$130,000 - $160,000"
+      "salary": "$130,000 - $160,000",
+      "phone":"01592-334423",
+      "email":"vugijugi05@gmail.com"
     },
     {
       "id": 6,
@@ -45,6 +55,8 @@
       "companyName": "Apple",
       "jobTime": ["Part-time", "Remote"],
       "location": "San Francisco, CA",
-      "salary": "$90,000 - $110,000"
+      "salary": "$90,000 - $110,000",
+      "phone":"01892-334423",
+      "email":"vugijugi06@gmail.com"
     }
   ]
