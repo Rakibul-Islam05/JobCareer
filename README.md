@@ -4,7 +4,7 @@ private repo :
 ## https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-Rakibul-Islam05
 
 
-Live link:
+## Live link:https://effervescent-unicorn-52e058.netlify.app/
 
 
 Project Name: JobLagbe
