@@ -12,13 +12,13 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <div>
-      <button></button>
-      <button></button>
+      <div className='flex justify-end mt-5 gap-3'>
+      <button className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center'>show remote jobs</button>
+      <button className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center'>show on-site jobs</button>
       </div>
       <div className='mt-16 flex items-center gap-5 p-5 border'>
         <div>
-          <img src={`/src/assets/All Images/job${job.id}.png`} alt="" />
+          <img src={job.image} alt="" />
         </div>
         <div className='text-start'>
           <h2 className='text-semibold text-xl'>{job.jobPosition}</h2>
