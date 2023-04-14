@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../../../public/Feature.json';
 
 const JobDetails = () => {
     const { jobId } = useParams();
-    const job = data.find(job => job.id === parseInt(jobId, 10));
+    const [jobdata,setJobdata] = useState({});
+    useEffect(()=>{
+       const job = data.find(job => job.id === parseInt(jobId, 10)); 
+       setJobdata(job);
+    },[jobdata]);
+    
 
     const handleApplyNowClick = () => {
         // Store job data in local storage
-        localStorage.setItem('job', JSON.stringify(job));
+        localStorage.setItem('job', JSON.stringify(jobdata));
     };
 
     return (
@@ -27,12 +32,12 @@ const JobDetails = () => {
             <div>
             <div className='p-10 bg-slate-200 rounded-lg h-auto'>
                 <h4 className='font-semibold text-3xl border-b-2 border-slate-300'>Job Details</h4>
-                <p className='mt-5 flex item-center'><img src="/src/assets/Icons/Frame.png" alt="" /><b>Salary:</b>{job.salary}</p>
-                <p className='mt-5 flex item-center'><img src="/src/assets/Icons/Frame-1.png" alt="" /><b>Salary:</b>{job.jobPosition}</p><br />
-                <h3 className='text-xl font-semibold text-start mb-5 border-b-2 border-slate-300'>Contact Information</h3>
-                <p className='flex item-center'><img src="/src/assets/Icons/Frame-2.png" alt="" /><b>Phone:</b>{job.phone}</p><br/>
-                <p className='flex item-center'><img src="/src/assets/Icons/Frame-3.png" alt="" /><b>Email:</b>{job.email}</p><br/>
-                <p className='flex item-center'><img src="/src/assets/Icons/Frame-4.png" alt="" /><b>Address:</b>{job.location}</p>    
+                <p className='mt-5 flex item-center'><img src="/src/assets/Icons/Frame.png" alt="" /><b>Salary:</b>{jobdata.salary}</p>
+                <p className='mt-5 flex item-center'><img src="/src/assets/Icons/Frame-1.png" alt="" /><b>JobTitle :</b>{jobdata.jobPosition}</p><br />
+                <h3 className='text-xl font-semibold text-start mb-5 border-b-2 rborder-slate-300'>Contact Information</h3>
+                <p className='flex item-center'><img src="/src/assets/Icons/Frame-2.png" alt="" /><b>Phone:</b>{jobdata.phone}</p><br/>
+                <p className='flex item-center'><img src="/src/assets/Icons/Frame-3.png" alt="" /><b>Email:</b>{jobdata.email}</p><br/>
+                <p className='flex item-center'><img src="/src/assets/Icons/Frame-4.png" alt="" /><b>Address:</b>{jobdata.location}</p>    
             </div>
             <button onClick={handleApplyNowClick} className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4'>Apply Now</button>
             </div>

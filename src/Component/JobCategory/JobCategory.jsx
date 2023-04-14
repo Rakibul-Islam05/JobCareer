@@ -11,7 +11,7 @@ const JobCtegory = () => {
       <div className='md:flex mt-5 justify-between'>
         {data.map((job) => (
           <div key={job.id} className='p-6 rounded bg-gray-100 '>
-          <img src={`/src/assets/Icons/categori${job.id}.png`} alt={job.jobCategory} className='mx-auto mb-4'/>
+          <img src={job.image} alt={job.jobCategory} className='mx-auto mb-4'/>
             <h3>{job.jobCategory}</h3>
             <p>{job.availableJob} jobs available</p>
           </div>

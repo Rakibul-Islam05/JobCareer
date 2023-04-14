@@ -7,7 +7,7 @@ const Banner = () => {
         <div >
             <div className='md:flex'>
                 <div>
-                    <img src="/src/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+                    <img src="https://i.ibb.co/cYJGcYZ/P3-OLGJ1-copy-1.png" alt="" />
                 </div>
 
                 <div className='text-left'>

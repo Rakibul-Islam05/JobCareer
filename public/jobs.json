@@ -1,20 +1,24 @@
 [  {
     "id": 1,
     "jobCategory": "Account & Finance",
-    "availableJob": "3466"  
+    "availableJob": "3466" ,
+    "image":"https://i.ibb.co/xmWT0Wb/categori1.png" 
     }, 
     {
     "id": 2,
     "jobCategory": "Creative Design",
-    "availableJob": "5655"
+    "availableJob": "5655",
+    "image":"https://i.ibb.co/SKDqB5B/categori2.png"
     },  
     {
     "id": 3,
     "jobCategory": "Marketing & Sales",
-    "availableJob": "9888"  
+    "availableJob": "9888",
+    "image":"https://i.ibb.co/9g261PY/categori3.png"  
     },  
     {"id": 4,
     "jobCategory": "Engineering Job", 
-    "availableJob": "8777"  
+    "availableJob": "8777",
+    "image": "https://i.ibb.co/CK0wrZC/categori4.png"
     }
 ]

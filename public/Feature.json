@@ -3,60 +3,66 @@
       "id": 1,
       "jobPosition": "Software Engineer",
       "companyName": "Google",
-      "jobTime": ["Full-time", "Remote"],
+      "jobTime": "Full-time",
       "location": "Mountain View, CA",
       "salary": "$150,000 - $200,000",
       "phone":"01792-334423",
-      "email":"vugijugi01@gmail.com"
+      "email":"vugijugi01@gmail.com",
+      "image":"https://i.ibb.co/6JzCCJf/job1.png"
     },
     {
       "id": 2,
       "jobPosition": "Data Analyst",
       "companyName": "Airbnb",
-      "jobTime": ["Part-time", "On-site"],
+      "jobTime": "Remote",
       "location": "Menlo Park, CA",
       "salary": "$80,000 - $120,000",
       "phone":"01392-334423",
-      "email":"vugijugi02@gmail.com"
+      "email":"vugijugi02@gmail.com",
+      "image":"https://i.ibb.co/G2z8LgR/job2.png"
     },
     {
       "id": 3,
       "jobPosition": "Marketing Manager",
       "companyName": "Netflix",
-      "jobTime": ["Full-time", "On-site"],
+      "jobTime": "Full-time",
       "location": "Cupertino, CA",
       "salary": "$120,000 - $150,000",
       "phone":"01492-334423",
-      "email":"vugijugi03@gmail.com"
+      "email":"vugijugi03@gmail.com",
+      "image":"https://i.ibb.co/CJ80Mvs/job3.png"
     },
     {
       "id": 4,
       "jobPosition": "UI/UX Designer",
       "companyName": "Tesla",
-      "jobTime": ["On-site", "Remote"],
+      "jobTime": "Remote",
       "location": "Seattle, WA",
       "salary": "$100,000 - $130,000",
       "phone":"01692-334423",
-      "email":"vugijugi04@gmail.com"
+      "email":"vugijugi04@gmail.com",
+      "image":"https://i.ibb.co/bN8HMy2/job4.png"
     },
     {
       "id": 5,
       "jobPosition": "Product Manager",
       "companyName": "Facebook",
-      "jobTime": ["On-site", "Remote"],
+      "jobTime": "Remote",
       "location": "Redmond, WA",
       "salary": "$130,000 - $160,000",
       "phone":"01592-334423",
-      "email":"vugijugi05@gmail.com"
+      "email":"vugijugi05@gmail.com",
+      "image":"https://i.ibb.co/Vx5MmWt/job5.png"
     },
     {
       "id": 6,
       "jobPosition": "Sales Executive",
       "companyName": "Apple",
-      "jobTime": ["Part-time", "Remote"],
+      "jobTime": "Full-time",
       "location": "San Francisco, CA",
       "salary": "$90,000 - $110,000",
       "phone":"01892-334423",
-      "email":"vugijugi06@gmail.com"
+      "email":"vugijugi06@gmail.com",
+      "image":"https://i.ibb.co/Jd0JQXj/job6.png"
     }
   ]
