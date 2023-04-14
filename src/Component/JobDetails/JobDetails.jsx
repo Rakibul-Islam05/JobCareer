@@ -6,6 +6,11 @@ const JobDetails = () => {
     const { jobId } = useParams();
     const job = data.find(job => job.id === parseInt(jobId, 10));
 
+    const handleApplyNowClick = () => {
+        // Store job data in local storage
+        localStorage.setItem('job', JSON.stringify(job));
+    };
+
     return (
         <div className='mt-20 grid md:grid-cols-2 gap-4 '>
             <div className='text-left text-xl'>
@@ -29,7 +34,7 @@ const JobDetails = () => {
                 <p className='flex item-center'><img src="/src/assets/Icons/Frame-3.png" alt="" /><b>Email:</b>{job.email}</p><br/>
                 <p className='flex item-center'><img src="/src/assets/Icons/Frame-4.png" alt="" /><b>Address:</b>{job.location}</p>    
             </div>
-            <button className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4'>Apply Now</button>
+            <button onClick={handleApplyNowClick} className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4'>Apply Now</button>
             </div>
 
         </div>
