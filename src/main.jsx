@@ -12,6 +12,7 @@ import Banner from './Component/Banner/Banner';
 import Blogs from './Component/Blogs/Blogs';
 import JobDetails from './Component/JobDetails/JobDetails';
 import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
+import Feature from './Component/Feature/Feature';
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path:'/blogs',
         element:<Blogs></Blogs>
+      },
+      {
+        path:'/feature',
+        element:<Feature></Feature>
       }
     ]
   },
