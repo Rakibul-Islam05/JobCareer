@@ -17,39 +17,39 @@ import Feature from './Component/Feature/Feature';
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Home></Home>,
-    children:[
+    path: '/',
+    element: <Home></Home>,
+    children: [
       {
-        path:'/',
-        element:<Banner></Banner>
+        path: '/',
+        element: <Banner></Banner>
       },
       {
-        path:'/statistics',
-        element:<Statistics></Statistics>
+        path: '/statistics',
+        element: <Statistics></Statistics>
       },
       {
-        path:'job/:jobId',
-        element:<JobDetails></JobDetails>
+        path: 'job/:jobId',
+        element: <JobDetails></JobDetails>
       },
       {
-        path:'/appliedJobs',
-        element:<AppliedJobs></AppliedJobs>
+        path: '/appliedJobs',
+        element: <AppliedJobs></AppliedJobs>
       },
       {
-        path:'/blogs',
-        element:<Blogs></Blogs>
+        path: '/blogs',
+        element: <Blogs></Blogs>
       },
       {
-        path:'/feature',
-        element:<Feature></Feature>
+        path: '/feature',
+        element: <Feature></Feature>
       }
     ]
   },
-]);             
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import data from '../../../public/Feature.json';
 
 const JobDetails = () => {
@@ -39,7 +39,9 @@ const JobDetails = () => {
                     <p className='flex item-center'><img src="/src/assets/Icons/Frame-3.png" alt="" /><b>Email:</b>{jobdata.email}</p><br />
                     <p className='flex item-center'><img src="/src/assets/Icons/Frame-4.png" alt="" /><b>Address:</b>{jobdata.location}</p>
                 </div>
-                <button onClick={handleApplyNowClick} className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4'>Apply Now</button>
+                <Link to="/feature">
+                    <button onClick={handleApplyNowClick} className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4'>Apply Now</button>
+                </Link>
             </div>
 
         </div>

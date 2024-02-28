@@ -17,6 +17,7 @@ const Feature = () => {
                 <h1 className='font-bold text-5xl'>Featured Jobs</h1>
                 <p className='mt-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
+
             <div className='grid md:grid-cols-2 gap-4 mt-6'>
                 {jobData.map(job => (
                     <div key={job.id} className='border p-6 rounded text-left'>
@@ -24,7 +25,10 @@ const Feature = () => {
                         <h2 className='font-semibold text-lg'>{job.jobPosition}</h2>
                         <p>{job.companyName}</p>
                         <p className='mt-4 text-blue-500'><span className='border p-2 rounded-lg'>{job.jobTime}</span></p>
-                        <p className='flex mt-3 mb-4'> <img src={`/src/assets/Icons/Location Icon.png`} alt="" />{job.location} <img src={`/src/assets/Icons/Frame.png`} alt="" className='' /> Salary:{job.salary}</p>
+                        <p className='flex mt-3 mb-4'>
+                            <img src={`/src/assets/Icons/Location Icon.png`} alt="" />{job.location}
+                            <img src={`/src/assets/Icons/Frame.png`} alt="" className='ms-3' /> Salary:{job.salary}
+                        </p>
 
                         <Link to={`/job/${job.id}`} className='btn text-white bg-gradient-to-br from-[#7E90FE] to-[#9873FF] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center'>
                             View Details

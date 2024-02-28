@@ -1,4 +1,5 @@
 import React from 'react';
+import './Statistics.css'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceDot, Legend, Label } from 'recharts';
 
 const assignments = [
@@ -12,16 +13,10 @@ const assignments = [
 ];
 
 
-const Statistics = ({ children }) => {
+const Statistics = () => {
   return (
-    <div>
-      <div className='text-center md:pt-20 md:pb-24 pt-8 pb-8 bg-hero'>
-        <h2 className='text-3xl md:text-5xl font-bold'>
-          {children}
-        </h2>
-      </div>
-      <div className=' mx-2 md:mx-12 mt-5 md:my-10'>
-        <ResponsiveContainer width="95%" height={500}>
+      <div className='md:mx-12 mt-5 md:my-10 width'>
+        <ResponsiveContainer width="80%" height={500}>
           <AreaChart data={assignments}>
             <CartesianGrid strokeDasharray="3 3" stroke="#000000" />
             <XAxis dataKey="name" axisLine={{ strokeWidth: 2 }} />
@@ -40,7 +35,6 @@ const Statistics = ({ children }) => {
 
         </ResponsiveContainer>
       </div>
-    </div>
   );
 };
 

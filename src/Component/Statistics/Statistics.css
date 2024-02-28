@@ -1,0 +1,7 @@
+.width {
+    @media only screen and (min-width: 728px) {
+        body {
+            width: 1216px;
+        }
+    }
+}
